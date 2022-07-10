@@ -57,7 +57,7 @@ def name_is_valid(name):
     for char in name:
         if char.isalnum():
             return True
-    if len(name) == 0:
+    if name == "":
         return False
 
 def enter_id():
@@ -65,7 +65,7 @@ def enter_id():
     for char in id:
         if char.isdigit():
             return int(id)
-    if len(id) == 0:
+    if id == "":
         return None
 
 def enter_production_year():
@@ -77,7 +77,7 @@ def enter_production_year():
     for char in production_year:
         if char.isdigit():
             return int(production_year)
-    if len(production_year) == 0:
+    if production_year == "":
         return None
 
 def enter_brand():
@@ -85,7 +85,7 @@ def enter_brand():
     for char in brand:
         if char.isalnum():
             return brand
-    if len(brand) == 0:
+    if brand == "":
         return False
 
 def enter_model():
@@ -93,7 +93,7 @@ def enter_model():
     for char in model:
         if char.isalnum():
             return model
-    if len(model) == 0:
+    if model == "":
         return False
 
 def enter_convertible():
@@ -102,7 +102,7 @@ def enter_convertible():
         return True
     elif convertible == "n":
         return False
-    elif len(convertible) == 0:
+    elif convertible == "":
         return None
 
 def input_car_data():
